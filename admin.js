@@ -48,6 +48,8 @@ jQuery( function( $ ) {
 	})
 
 	// stash user json on load
-	$('#gradebook_classes_user_selection_json').val( gradebookClassesUserJson )
+  if (typeof gradebookClassesUserJson !== 'undefined') {
+    $('#gradebook_classes_user_selection_json').val( gradebookClassesUserJson )
+  }
 
 });
